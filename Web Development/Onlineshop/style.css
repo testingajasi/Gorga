@@ -1,0 +1,240 @@
+html{
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    font: inherit;
+    text-decoration: none;
+}
+button{
+    font: inherit;
+    border: none;
+    background: none;
+}
+img,
+svg,
+ion-icon,
+span,
+button{
+    display: block;
+}
+.container{
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 20px 30px;
+    background: hsla(0,0%,100%,0.99);
+    border-bottom: 1px solid hsla(0,0%,0%,0.05);
+    z-index: 5;
+}
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav{
+    position: static;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 30px;
+}
+.nav-link{
+    color: #000;
+    font-size: 22px;
+    transition: 0.25s ease;
+}
+.nav-link:hover{
+    color: #f7c532;
+}
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:  50px;
+    padding: 10px;
+}
+.home-left{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.home-left p{
+    font-size: 20px;
+    display: inline-block;
+    padding: 3px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.home-right{
+    position: relative;
+    aspect-ratio: 10/11;
+    padding-top: 70%;
+}
+.food-img{
+    position: absolute;
+    width: 60%;
+}
+.food-1{
+    top: 25%;
+    left: -4%;
+}
+.food-2{
+    top: 5%;
+    right: -4%;
+}
+.food-3{
+    top: 45%;
+    right: -5%;
+}
+.about{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: center;
+}
+.about-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px dotted;
+    padding: 10px;
+}
+.about-right .section-title{
+    margin-bottom: 30px;
+}
+.about-right p{
+    max-width: 100%;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.services{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}.card-number{
+    font-size: 48px;
+font-family: "Monoton", cursive;
+color: #f7c532;
+}
+.card-headling{
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+.card-text{
+    color: #000;
+    font-size: 16px;
+}
+.menu-card .img.box{
+    position: relative;
+    overflow: hidden;
+}
+.menu-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-card:hover .menu-img{
+    transform: scale(1.05);
+}
+.menu-card .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #f3f2f2;
+    margin-bottom: 0px;
+}
+.menu-card .menu-name{
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 15px;
+    margin: 0px;
+}
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.testimonials-card .card-title{
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.testimonials-rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.testimonials-rating img{
+    width: 20px;
+    height: 20px;
+}
+.testimonials-text{
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+footer{
+    position: relative;
+    background: #a5a1a1;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100px;
+}
+.footer-wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.social-link{
+    display: flex;
+    gap: 15px;
+}
+.copyright{
+    font-size: 12px;
+    color: #dcdbdb;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
