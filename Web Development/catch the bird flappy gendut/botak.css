@@ -1,0 +1,21 @@
+body{
+    background-image: url("image/background.png");
+    height: 100%;
+    margin: 0, auto;
+    text-align: center;
+    cursor: url("image/crosshair.png") 50 50, auto;
+}
+#player{
+    position: absolute;
+    transition: all 0,1s;
+}
+p{
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    border-style: none;
+    text-align: center;
+}
