@@ -1,0 +1,16 @@
+canvas{
+    background: white;
+    display: flex;
+    display: block;
+    margin: 0 auto;
+}
+h2,
+p{
+    text-align: center;
+}
+html{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+div{
+    width: 100;
+}
