@@ -4,7 +4,7 @@ currentH,
 currentM,
 activeAlarm = false
 sound = new Audio(
-    
+    'ayam.wav'
 );
 sound.loop = true;
 function displayTime() {
@@ -30,7 +30,7 @@ function addMinSecVals(id) {
 }
 function addHours(id) {
     var select = id;
-    var min = 12;
+    var hour = 12;
     for (i = 1; i <= hour; i ++){
         select.option[select.option.length] = new Option(
             i < 10 ? "0" + i : i,
@@ -54,7 +54,7 @@ startstop.onclick = function () {
         ":" +
         seconds.value +
         ":" +
-        ampm.value +
+        ampm.value;
         this.textContent = "Clear Alarm";
         activeAlarm = true;
     }else{
@@ -67,5 +67,26 @@ startstop.onclick = function () {
         this.textContent = "Set Alarm";
         snooze.className = "hide";
         activeAlarm = false
+        snooze.onclick = function () {
+            if (activeAlarm === true){
+                currentH = time.substr(0, time.length - 9);
+                currentM = time.substr(currentH.length + 1, time.length - 8);
+                if(currentM >= "55"){
+                    minutes.value = "00";
+                    hours.value = parseInt(currentM + 1);
+                }else{
+                    if(parseInt(currentM) + 5 <= 9){
+                    minutes.value = "0" + parseInt(currentM + 5);
+                }else{
+                    minutes.value = parseInt(currentM) + 5;
+                }
+                }
+                snooze.className = "hide";
+                startstop.click();
+                startstop.click();
+            }else{
+                return false;
+            }
+        };
     }
 }
